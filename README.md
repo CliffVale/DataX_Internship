@@ -16,4 +16,4 @@ The "Superstore Performance Overview" dashboard was built to provide a clean, un
 
 ## Deliverables Included
 * `Superstore.csv`: The raw dataset used for analysis.
-* `Superstore_Dashboard.pdf`: The final visual report exported from Tableau.
+* `Dashboard.png`: The final visual report exported from Tableau.
