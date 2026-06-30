@@ -1,19 +1,19 @@
-# DataX Labs - Task 1: Data Cleaning and Preprocessing
+# DataX Labs - Task 2: Data Visualization and Storytelling
 
 ## Objective
-Clean and prepare the raw "Medical Appointment No Shows" Kaggle dataset for exploratory analysis and modeling. 
+Create visualizations that convey a compelling story and extract business insights using the Sample Superstore dataset.
 
 ## Tools Used
-* Python (Pandas)
-* Jupyter Notebook
+* Tableau Public (Web Authoring)
 
-## Summary of Changes
-The dataset underwent the following preprocessing steps to handle inconsistencies, missing values, and formatting issues:
+## Dashboard Overview
+The "Superstore Performance Overview" dashboard was built to provide a clean, uncluttered look at regional performance, historical profit trends, and category-level profitability. 
 
-* **Header Standardization:** Converted all column names to lowercase and replaced spaces/hyphens with underscores to ensure clean, uniform access (e.g., `PatientId` to `patientid`).
-* **Missing Values Handling:** Assessed the dataset for null values using `.isnull().sum()`. The data was complete, requiring no row drops or imputation via `.dropna()` or `.fillna()`.
-* **Duplicate Removal:** Checked for identical records. No exact duplicate rows were found in this specific dataset, but `.drop_duplicates()` was executed to guarantee uniqueness.
-* **Text Standardization:** Cleaned the `gender` column by stripping trailing/leading whitespace and enforcing an uppercase string format ('M' and 'F') to prevent categorical fragmentation.
-* **Data Type Correction:** 
-  * Converted the `scheduledday` and `appointmentday` columns from string objects into proper Pandas `datetime64` objects for accurate time-series analysis.
-  * Cast the `age` column strictly as an `int64` integer type.
+### Key Takeaways & Business Insights
+1. **Sales by Region:** A horizontal bar chart was used to easily compare total revenue across regions. The West region is the clear top performer in overall sales.
+2. **Profit Trends:** A line chart was selected as the optimal visualization for time-series data, showing a consistent upward trajectory in overall profit from 2014 to 2017.
+3. **Profitability (Sales vs. Profit):** A scatter plot was utilized to identify outliers. Crucially, it highlights several high-sales sub-categories that actually generate negative profit (falling below the zero line), indicating areas where cost-cutting or pricing adjustments are required.
+
+## Deliverables Included
+* `Superstore.csv`: The raw dataset used for analysis.
+* `Superstore_Dashboard.pdf`: The final visual report exported from Tableau.
