@@ -5,7 +5,7 @@ Design an interactive dashboard for business stakeholders to inform business dec
 
 ## Tools Used
 * Tableau Public (Web Authoring)
-* PowerPoint / Google Slides
+* PowerPoint
 
 ## Deliverables Included
 * **Interactive Dashboard:** Built with key KPI cards (Sales, Profit), a time-series trend line, and interactive region slicers.
