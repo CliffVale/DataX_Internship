@@ -1,19 +1,16 @@
-# DataX Labs - Task 1: Data Cleaning and Preprocessing
+# DataX Labs - Task 4: SQL for Data Analysis
 
 ## Objective
-Clean and prepare the raw "Medical Appointment No Shows" Kaggle dataset for exploratory analysis and modeling. 
+Extract, manipulate, and analyze structured ecommerce data utilizing SQL queries to extract key business metrics.
 
 ## Tools Used
-* Python (Pandas)
-* Jupyter Notebook
+* SQLite
+* Superstore Dataset
 
-## Summary of Changes
-The dataset underwent the following preprocessing steps to handle inconsistencies, missing values, and formatting issues:
-
-* **Header Standardization:** Converted all column names to lowercase and replaced spaces/hyphens with underscores to ensure clean, uniform access (e.g., `PatientId` to `patientid`).
-* **Missing Values Handling:** Assessed the dataset for null values using `.isnull().sum()`. The data was complete, requiring no row drops or imputation via `.dropna()` or `.fillna()`.
-* **Duplicate Removal:** Checked for identical records. No exact duplicate rows were found in this specific dataset, but `.drop_duplicates()` was executed to guarantee uniqueness.
-* **Text Standardization:** Cleaned the `gender` column by stripping trailing/leading whitespace and enforcing an uppercase string format ('M' and 'F') to prevent categorical fragmentation.
-* **Data Type Correction:** 
-  * Converted the `scheduledday` and `appointmentday` columns from string objects into proper Pandas `datetime64` objects for accurate time-series analysis.
-  * Cast the `age` column strictly as an `int64` integer type.
+## Deliverables & Methodology
+This repository contains the dataset, the SQL script, and output screenshots demonstrating proficiency in:
+* **Basic Querying:** Extracted top-performing products using `SELECT`, `WHERE`, and `ORDER BY`.
+* **Aggregations:** Calculated total revenue and average profit by utilizing `SUM()`, `AVG()`, and `GROUP BY` on regional data.
+* **Subqueries:** Filtered for sales transactions exceeding the overall average order value.
+* **Views & Indexes:** Created a virtual table (`High_Value_Customers`) using the `HAVING` clause, and optimized the table by indexing the `Region` column.
+* **Joins:** Integrated a secondary mock-table of Regional Managers utilizing an `INNER JOIN` to map leadership to regional revenue generation.
